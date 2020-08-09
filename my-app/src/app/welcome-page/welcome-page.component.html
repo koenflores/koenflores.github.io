@@ -1,0 +1,13 @@
+<body style="margin: 10px; padding: 20px">
+    <div class="grid-list">
+        <div *ngFor="let blog of blogs">
+            <app-blog-card
+                [title]="blog.title"
+                [description]="blog.description"
+                (click)="goToBlog(blog.id)">
+            </app-blog-card>
+        </div>
+    </div>
+</body>
+
+

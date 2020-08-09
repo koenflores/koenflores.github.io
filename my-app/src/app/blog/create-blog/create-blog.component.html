@@ -1,0 +1,26 @@
+<div class="body">
+    <form [formGroup]="blogForm">
+        <mat-form-field appearance="fill" required>
+            <mat-label style="color: blue;" required>Title</mat-label>
+            <input matInput formControlName="title">
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="legacy">
+            <mat-label style="color: blue;" required>Description</mat-label>
+            <textarea matInput formControlName="description"></textarea>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label style="color: blue;">tags</mat-label>
+            <textarea matInput formControlName="tags"></textarea>
+        </mat-form-field>
+        <br>
+        <mat-form-field appearance="outline">
+            <mat-label style="color: blue;">pictures</mat-label>
+            <textarea matInput formControlName="pictures"></textarea>
+        </mat-form-field>
+        <br>
+        <button mat-raised-button color="primary" (click)="submit()">Submit</button>
+    </form>
+</div>
+

@@ -1,0 +1,28 @@
+<app-header></app-header>
+<router-outlet></router-outlet>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.16.1/firebase-app.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAK7sM8m5UsKOh7e8v-KLL3HAeVJu93JrQ",
+    authDomain: "kenonsblog.firebaseapp.com",
+    databaseURL: "https://kenonsblog.firebaseio.com",
+    projectId: "kenonsblog",
+    storageBucket: "kenonsblog.appspot.com",
+    messagingSenderId: "473359610657",
+    appId: "1:473359610657:web:29529337fd653008400460",
+    measurementId: "G-CMFGGW3X3T"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
