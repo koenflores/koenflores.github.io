@@ -1,26 +1,29 @@
-<div class="body">
+<h1 mat-dialog-title>Create Blog</h1>
+<div mat-dialog-content class="content">
     <form [formGroup]="blogForm">
-        <mat-form-field appearance="fill" required>
-            <mat-label style="color: blue;" required>Title</mat-label>
+        <mat-form-field appearance="legacy" required style="width: 300px;">
+            <mat-label style="color: white;" required>Title</mat-label>
             <input matInput formControlName="title">
         </mat-form-field>
         <br>
-        <mat-form-field appearance="legacy">
-            <mat-label style="color: blue;" required>Description</mat-label>
+        <mat-form-field appearance="legacy" style="width: 300px;">
+            <mat-label style="color: white;" required>Description</mat-label>
             <textarea matInput formControlName="description"></textarea>
         </mat-form-field>
         <br>
-        <mat-form-field appearance="outline">
-            <mat-label style="color: blue;">tags</mat-label>
+        <mat-form-field appearance="legacy" style="width: 300px;">
+            <mat-label style="color: white;">Tags</mat-label>
             <textarea matInput formControlName="tags"></textarea>
         </mat-form-field>
         <br>
-        <mat-form-field appearance="outline">
-            <mat-label style="color: blue;">pictures</mat-label>
+        <mat-form-field appearance="legacy" style="width: 300px;">
+            <mat-label style="color: white;">Pictures</mat-label>
             <textarea matInput formControlName="pictures"></textarea>
         </mat-form-field>
-        <br>
-        <button mat-raised-button color="primary" (click)="submit()">Submit</button>
+        <div mat-dialog-actions align="end" style="width: 300px; padding-top: 30px;">
+            <button mat-raised-button matDialogClose color="primary">Cancel</button>
+            <button mat-raised-button color="primary" (click)="submit()">Submit</button>
+        </div>
     </form>
 </div>
 

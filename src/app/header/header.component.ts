@@ -20,9 +20,8 @@ export class HeaderComponent implements OnInit {
 
   createBlog() {
     const dialogRef = this.dialog.open(CreateBlogComponent, {
-      height: '400px',
-      width: '600px',
+      height: '460px',
+      width: '350px',
     });
-
   }
 }
